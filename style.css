@@ -284,7 +284,7 @@ header ul li a{
 }
 .contacto .contacto-form .contacto-input{
     border: none;
-    width: 230px;
+    width: 90vw;
     height: 50px;
     border-bottom: 2px solid var(--color-3);
     background: var(--background-contacto);
@@ -292,11 +292,13 @@ header ul li a{
 }
 .contacto .contacto-form .contacto-textarea{
     border: none;
-    width: 230px;
+    width: 90vw;
     height: 120px;
     border-bottom: 2px solid var(--color-3);
     background: var(--background-contacto);
     padding: 22px 0 0 15px;
+    display: block;
+    margin: auto;
 }
 .contacto .contacto-form .contacto-input:focus,
 .contacto-textarea:focus{
@@ -310,7 +312,10 @@ header ul li a{
     border: none;
     color: var(--font-white);
     background: var(--color-3);
-    margin: 30px;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .contacto .contacto-direccion{
     text-align: start;
@@ -330,6 +335,7 @@ header ul li a{
     color: var(--color-3);
     margin-right: 10px;
 }
+/*  FOOTER  */
 footer{
     background: var(--background-white);
     text-align: center;
@@ -339,4 +345,59 @@ footer{
     color: black;
     font-size: 40px;
     margin: 10px;
+}
+@media (min-width: 720px){
+    footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contacto .contacto-form .contacto-input{
+        width: 200px;
+    }
+   .contacto .contacto-form .contacto-textarea{
+        width: 405px;
+    }
+    .contacto-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nosotros{
+        padding: 50px;
+    }
+    .nosotros .nosotros-container{
+        display: flex;
+        justify-content: space-around;
+        padding: 25px;
+    }
+    .nosotros .nosotros-container .nosotros-txt{
+        width: 60%;
+    }
+    .nosotros .nosotros-container-cifras .nosotros-cifras{
+        margin: 50px;
+    }
+    .suscribite{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px;
+    }
+    .suscribite .suscribite-btn{
+        margin-bottom: -7px;
+    }
+    .testimoniales-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimoniales .testimoniales-card{
+        width: 600px;
+    }
+    .trabajos .trabajos-container{
+        display: flex;
+    }
+    .caracteristicas{
+        flex-direction: row;
+    }
 }

@@ -60,45 +60,51 @@
     </section>
     <section class="trabajos">
         <p class="trabajos-titulo">Our Work</p>
-        <figure class="trabajos-img">
-            <img src="img/galeria1.jpg" alt="">
-        </figure>
-        <figure class="trabajos-img">
-            <img src="img/galeria2.jpg" alt="">
-        </figure>
-        <figure class="trabajos-img">
-            <img src="img/galeria3.jpg" alt="">
-        </figure>
-        <figure class="trabajos-img">
-            <img src="img/galeria4.jpg" alt="">
-        </figure>
+        <div class="trabajos-container">
+            <figure class="trabajos-img">
+                <img src="img/galeria1.jpg" alt="">
+            </figure>
+            <figure class="trabajos-img">
+                <img src="img/galeria2.jpg" alt="">
+            </figure>
+        </div>
+        <div class="trabajos-container">
+            <figure class="trabajos-img">
+                <img src="img/galeria3.jpg" alt="">
+            </figure>
+            <figure class="trabajos-img">
+                <img src="img/galeria4.jpg" alt="">
+            </figure>
+        </div>
         <button class="trabajos-button">View More Items</button>
     </section>
     <article class="testimoniales">
         <p class="testimoniales-titulo">Our Testimonials</p>
-        <div class="testimoniales-card">
-            <p class="testimoniales-txt"><i class="fas fa-quote-left comilla"></i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit optio atque facilis fugiat? Voluptatem, quisquam expedita labore ab soluta earum?<i class="fas fa-quote-right comilla"></i></p>
-            <div class="testimoniales-persona">
-                <figure class="testimoniales-img">
-                    <img src="img/silueta.jpg" alt="">
-                </figure>
-                <p>Erica Marin</p>
+        <div class="testimoniales-container">
+            <div class="testimoniales-card">
+                <p class="testimoniales-txt"><i class="fas fa-quote-left comilla"></i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit optio atque facilis fugiat? Voluptatem, quisquam expedita labore ab soluta earum?<i class="fas fa-quote-right comilla"></i></p>
+                <div class="testimoniales-persona">
+                    <figure class="testimoniales-img">
+                        <img src="img/silueta.jpg" alt="">
+                    </figure>
+                    <p>Erica Marin</p>
+                </div>
             </div>
-        </div>
-        <!-- <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore harum amet rerum, iste dicta architecto id molestias aliquam nostrum, quaerat deleniti hic pariatur. Quas quod deserunt facere sunt?</p>
+            <!-- <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore harum amet rerum, iste dicta architecto id molestias aliquam nostrum, quaerat deleniti hic pariatur. Quas quod deserunt facere sunt?</p>
+                <div>
+                    <figure><img src="" alt=""></figure>
+                    <p>Andrea Marin</p>
+                </div>
+            </div>
             <div>
-                <figure><img src="" alt=""></figure>
-                <p>Andrea Marin</p>
-            </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatibus non architecto modi cum at nobis reprehenderit?</p>
+                <div>
+                    <figure><img src="" alt=""></figure>
+                    <p>Mauro Venditti</p>
+                </div>
+            </div> -->
         </div>
-        <div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatibus non architecto modi cum at nobis reprehenderit?</p>
-            <div>
-                <figure><img src="" alt=""></figure>
-                <p>Mauro Venditti</p>
-            </div>
-        </div> -->
     </article>
     <article class="suscribite">
         <div>
@@ -109,7 +115,7 @@
     </article>
     <section class="nosotros">
         <p class="nosotros-titulo">About Us</p>
-        <div>
+        <div class="nosotros-container">
             <div>
                 <p class="nosotros-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nisi tempore cupiditate in culpa veritatis vitae optio ab neque. Ducimus error voluptatum recusandae voluptates, modi officia quidem at maiores est, dolore aut reiciendis aliquid accusamus. Quaerat suscipit quae repellat accusantium. Placeat tenetur corporis ad, excepturi quis harum labore iure consequatur.</p>
                 <p class="nosotros-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nisi tempore cupiditate in culpa veritatis vitae optio ab neque. Ducimus error voluptatum recusandae voluptates, modi officia quidem at maiores est, dolore aut reiciendis aliquid accusamus. Quaerat suscipit quae repellat accusantium. Placeat tenetur corporis ad, excepturi quis harum labore iure consequatur.</p>
@@ -128,20 +134,22 @@
     </section>
     <section class="contacto">
         <p class="contacto-titulo">Contact Us</p>
-        <form class="contacto-form" action="">
-            <input type="text" class="contacto-input" placeholder="Name">
-            <input type="text" class="contacto-input" placeholder="Email">
-            <textarea id=""  class="contacto-textarea" placeholder="Message"></textarea>
-            <input type="button" class="contacto-btn" value="Send Message">
-        </form>
-        <div class="contacto-direccion">
-            <p class="contacto-direccion-titulo">Address</p>
-            <p>123, This Appartment,</p>
-            <p>Near Ocean Street</p>
-            <p>New York</p>
-            <div class="contacto-direccion-contact">
-                <p><i class="fas fa-at contacto-icon"></i>hello@w3template.com</p>
-                <p><i class="fas fa-mobile-alt contacto-icon"></i>123 456 789</p>
+        <div class="contacto-container">
+            <form class="contacto-form" action="">
+                <input type="text" class="contacto-input" placeholder="Name">
+                <input type="text" class="contacto-input" placeholder="Email">
+                <textarea id=""  class="contacto-textarea" placeholder="Message"></textarea>
+                <input type="button" class="contacto-btn" value="Send Message">
+            </form>
+            <div class="contacto-direccion">
+                <p class="contacto-direccion-titulo">Address</p>
+                <p>123, This Appartment,</p>
+                <p>Near Ocean Street</p>
+                <p>New York</p>
+                <div class="contacto-direccion-contact">
+                    <p><i class="fas fa-at contacto-icon"></i>hello@w3template.com</p>
+                    <p><i class="fas fa-mobile-alt contacto-icon"></i>123 456 789</p>
+                </div>
             </div>
         </div>
     </section>
